@@ -1,0 +1,11 @@
+{
+  "title": "Bioseguridad",
+  "description": "This web application offers an informative platform for environmental engineering, presenting essential resources and insights for professionals in the field.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
