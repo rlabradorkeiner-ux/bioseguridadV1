@@ -4,6 +4,7 @@ import heroBg from "@/imports/Fotofondo.jpg";
 import ilustracion from "@/imports/94f7c0a6-924c-4dae-964a-7536b614b875-1.png";
 import ilustracion2 from "@/imports/Illustraci_n_2.png";
 import hojaaImg from "@/imports/Hojaaa.png";
+import logoAColor from "@/imports/LogoAColor.png";
 import bannerLogos from "@/imports/Banner-1.png";
 
 // ─── Color tokens ─────────────────────────────────────────────────────────────
@@ -255,61 +256,56 @@ function HeadphonesSvcIcon() {
   );
 }
 
-const serviceIcons = [
-  // 1 Categorización ambiental — leaf V-shape
-  <SvcIcon><path d="M36 22 L28 44 L36 40 L44 44 Z" /><line x1="36" y1="40" x2="36" y2="50" /></SvcIcon>,
-  // 2 Estudio de impacto ambiental — pickaxe
-  <SvcIcon><line x1="44" y1="28" x2="28" y2="44" /><path d="M44 24 L48 28 L38 38 L34 34 Z" /><path d="M26 46 L30 42" /></SvcIcon>,
-  // 3 Plan de gestión ambiental — briefcase with gear
-  <SvcIcon><rect x="24" y="32" width="24" height="18" rx="2" /><path d="M30 32 V28 a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4" /><circle cx="36" cy="41" r="3" /></SvcIcon>,
-  // 4 Informe ambiental de cumplimiento — rounded seal badge with checkmark
-  <SealBadgeSvcIcon />,
-  // 5 Plan de gestión de residuos — trash can
-  <SvcIcon><rect x="27" y="30" width="18" height="20" rx="2" /><line x1="24" y1="30" x2="48" y2="30" /><path d="M32 30v-3h8v3" /><line x1="32" y1="35" x2="32" y2="45" /><line x1="36" y1="35" x2="36" y2="45" /><line x1="40" y1="35" x2="40" y2="45" /></SvcIcon>,
-  // 6 Medición de huella de carbono — calculator
-  <SvcIcon><rect x="26" y="24" width="20" height="24" rx="2" /><rect x="29" y="27" width="14" height="6" rx="1" /><line x1="29" y1="38" x2="32" y2="38" /><line x1="35" y1="38" x2="38" y2="38" /><line x1="41" y1="38" x2="43" y2="38" /><line x1="29" y1="42" x2="32" y2="42" /><line x1="35" y1="42" x2="38" y2="42" /><line x1="41" y1="42" x2="43" y2="42" /></SvcIcon>,
-  // 7 Reporte de sustentabilidad — document with lines
-  <SvcIcon><rect x="26" y="22" width="20" height="26" rx="2" /><line x1="30" y1="30" x2="42" y2="30" /><line x1="30" y1="35" x2="42" y2="35" /><line x1="30" y1="40" x2="38" y2="40" /></SvcIcon>,
-  // 8 Informes anti siniéstrales — document with lines (variant)
-  <SvcIcon><rect x="26" y="22" width="20" height="26" rx="2" /><line x1="30" y1="30" x2="42" y2="30" /><line x1="30" y1="35" x2="42" y2="35" /><line x1="30" y1="40" x2="36" y2="40" /><line x1="30" y1="26" x2="42" y2="26" /></SvcIcon>,
-  // 9 Habilitaciones municipales — bookmark/ribbon
-  <SvcIcon><path d="M29 22 h14 v28 l-7-5 -7 5 Z" /></SvcIcon>,
-  // 10 Procedimientos de emergencia — exclamation in circle
-  <SvcIcon><circle cx="36" cy="36" r="10" /><line x1="36" y1="30" x2="36" y2="38" /><circle cx="36" cy="42" r="1" fill={C.primary} stroke="none" /></SvcIcon>,
-  // 11 Programas de seguridad — rounded seal badge with checkmark (same as #4)
-  <SealBadgeSvcIcon />,
-  // 12 Gestión de seguridad e higiene laboral — magnifier/lens with lines
-  <SvcIcon><circle cx="34" cy="34" r="10" /><line x1="41" y1="41" x2="48" y2="48" /><line x1="30" y1="32" x2="38" y2="32" /><line x1="30" y1="36" x2="38" y2="36" /></SvcIcon>,
-  // 13 Mediciones de ruido — 3 waves (same as vibraciones)
-  <SvcIcon><path d="M22 30 q7-6 14 0 t14 0" /><path d="M22 36 q7-6 14 0 t14 0" /><path d="M22 42 q7-6 14 0 t14 0" /></SvcIcon>,
-  // 14 Mediciones de iluminación — eye
-  <SvcIcon><path d="M20 36 c4-8 10-12 16-12 s12 4 16 12 c-4 8-10 12-16 12 s-12-4-16-12Z" /><circle cx="36" cy="36" r="5" /></SvcIcon>,
-  // 15 Mediciones de contaminantes — leaf/plant V
-  <SvcIcon><path d="M36 22 L28 44 L36 40 L44 44 Z" /><line x1="36" y1="40" x2="36" y2="50" /></SvcIcon>,
-  // 16 Mediciones de vibraciones — 3 waves
-  <SvcIcon><path d="M22 30 q7-6 14 0 t14 0" /><path d="M22 36 q7-6 14 0 t14 0" /><path d="M22 42 q7-6 14 0 t14 0" /></SvcIcon>,
-];
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
 
-const services = [
-  { name: "Categorización\nambiental", desc: "Relevamiento y categorización del impacto ambiental de tu actividad según la normativa vigente." },
-  { name: "Estudio de impacto\nambiental", desc: "EIA completos para nuevas obras, ampliaciones e instalaciones industriales." },
-  { name: "Plan de gestión\nambiental", desc: "Diseño e implementación de sistemas de gestión ambiental ISO 14001." },
-  { name: "Informe ambiental\nde cumplimiento", desc: "Seguimiento periódico e informes ante organismos provinciales y nacionales." },
-  { name: "Plan de gestión de\nresiduos", desc: "Clasificación, disposición y trazabilidad de residuos sólidos." },
-  { name: "Medición de\nhuella de carbono", desc: "Cálculo y reporte de emisiones de GEI según estándares GHG Protocol." },
-  { name: "Reporte de\nsustentabilidad", desc: "Elaboración de reportes de sostenibilidad bajo estándares GRI y ODS." },
-  { name: "Informes anti\nsiniéstrales", desc: "Documentación técnica y estadística de siniestros para organismos de control." },
-  { name: "Habilitaciones\nmunicipales", desc: "Gestión integral de trámites de habilitación municipal y renovaciones." },
-  { name: "Procedimientos\nde emergencia", desc: "Protocolos, simulacros y planes de contingencia ambiental y operativa." },
-  { name: "Programas de\nseguridad", desc: "Desarrollo e implementación de programas de prevención de riesgos laborales." },
-  { name: "Gestión de seguridad\ne higiene laboral", desc: "Asesoramiento SRT, ART y evaluaciones de riesgo ocupacional." },
-  { name: "Mediciones\nde ruido", desc: "Monitoreo acústico laboral y ambiental según normativa IRAM." },
-  { name: "Mediciones de\niluminación", desc: "Evaluación de puestos de trabajo según Resolución 800/16 SRT." },
-  { name: "Mediciones de\ncontaminantes", desc: "Determinación de contaminantes químicos y material particulado." },
-  { name: "Mediciones de\nvibraciones", desc: "Evaluación de vibraciones mano-brazo y cuerpo entero según normativa." },
+interface CatService { name: string; desc: string; icon: React.ReactNode; }
+interface ServiceCategory { label: string; services: CatService[]; }
+
+const serviceCategories: ServiceCategory[] = [
+  {
+    label: "Gestión ambiental",
+    services: [
+      { name: "Categorización\nambiental", desc: "Relevamiento y categorización del impacto ambiental de tu actividad según la normativa vigente.", icon: <SvcIcon><path d="M36 22 L28 44 L36 40 L44 44 Z" /><line x1="36" y1="40" x2="36" y2="50" /></SvcIcon> },
+      { name: "Certificado de\naptitud ambiental", desc: "Clasificación de complejidad, autorización de proyectos y aprobación provincial.", icon: <SealBadgeSvcIcon /> },
+      { name: "Estudio de impacto\nambiental", desc: "EIA completos para nuevas obras, ampliaciones e instalaciones industriales.", icon: <SvcIcon><line x1="44" y1="28" x2="28" y2="44" /><path d="M44 24 L48 28 L38 38 L34 34 Z" /><path d="M26 46 L30 42" /></SvcIcon> },
+      { name: "Licencia ambiental\ndigital", desc: "Gestión y tramitación de licencias ambientales digitales ante organismos competentes.", icon: <SvcIcon><rect x="26" y="22" width="20" height="26" rx="2" /><rect x="30" y="31" width="5" height="5" /><rect x="37" y="31" width="5" height="5" /><rect x="30" y="38" width="5" height="5" /><line x1="30" y1="27" x2="42" y2="27" /></SvcIcon> },
+      { name: "Medición de\nhuella de carbono", desc: "Cálculo y reporte de emisiones de GEI según estándares GHG Protocol.", icon: <SvcIcon><rect x="26" y="24" width="20" height="24" rx="2" /><rect x="29" y="27" width="14" height="6" rx="1" /><line x1="29" y1="38" x2="32" y2="38" /><line x1="35" y1="38" x2="38" y2="38" /><line x1="41" y1="38" x2="43" y2="38" /><line x1="29" y1="42" x2="32" y2="42" /><line x1="35" y1="42" x2="38" y2="42" /><line x1="41" y1="42" x2="43" y2="42" /></SvcIcon> },
+      { name: "Plan de gestión\nambiental", desc: "Diseño e implementación de sistemas de gestión ambiental ISO 14001.", icon: <SvcIcon><rect x="24" y="32" width="24" height="18" rx="2" /><path d="M30 32 V28 a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4" /><circle cx="36" cy="41" r="3" /></SvcIcon> },
+      { name: "Plan de gestión\nde residuos", desc: "Clasificación, disposición y trazabilidad de residuos sólidos urbanos e industriales.", icon: <SvcIcon><rect x="27" y="30" width="18" height="20" rx="2" /><line x1="24" y1="30" x2="48" y2="30" /><path d="M32 30v-3h8v3" /><line x1="32" y1="35" x2="32" y2="45" /><line x1="36" y1="35" x2="36" y2="45" /><line x1="40" y1="35" x2="40" y2="45" /></SvcIcon> },
+      { name: "Reporte de\nsustentabilidad", desc: "Elaboración de reportes de sostenibilidad bajo estándares GRI y ODS.", icon: <SvcIcon><rect x="26" y="22" width="20" height="26" rx="2" /><line x1="30" y1="30" x2="42" y2="30" /><line x1="30" y1="35" x2="42" y2="35" /><line x1="30" y1="40" x2="38" y2="40" /></SvcIcon> },
+    ],
+  },
+  {
+    label: "Higiene y seguridad",
+    services: [
+      { name: "Gestión de seguridad\ne higiene laboral", desc: "Asesoramiento SRT, ART y evaluaciones de riesgo ocupacional.", icon: <SvcIcon><circle cx="34" cy="34" r="10" /><line x1="41" y1="41" x2="48" y2="48" /><line x1="30" y1="32" x2="38" y2="32" /><line x1="30" y1="36" x2="38" y2="36" /></SvcIcon> },
+      { name: "Informes anti\nsiniéstrales", desc: "Documentación técnica y estadística de siniestros para organismos de control.", icon: <SvcIcon><rect x="26" y="22" width="20" height="26" rx="2" /><line x1="30" y1="30" x2="42" y2="30" /><line x1="30" y1="35" x2="42" y2="35" /><line x1="30" y1="40" x2="36" y2="40" /><line x1="30" y1="26" x2="42" y2="26" /></SvcIcon> },
+      { name: "Procedimientos\nde emergencia", desc: "Protocolos, simulacros y planes de contingencia ambiental y operativa.", icon: <SvcIcon><circle cx="36" cy="36" r="10" /><line x1="36" y1="30" x2="36" y2="38" /><circle cx="36" cy="42" r="1" fill={C.primary} stroke="none" /></SvcIcon> },
+      { name: "Programas de\nseguridad", desc: "Desarrollo e implementación de programas de prevención de riesgos laborales.", icon: <SealBadgeSvcIcon /> },
+    ],
+  },
+  {
+    label: "Mediciones",
+    services: [
+      { name: "Contaminantes\nambientales", desc: "Determinación de contaminantes químicos y material particulado en ambiente laboral.", icon: <SvcIcon><path d="M36 22 L28 44 L36 40 L44 44 Z" /><line x1="36" y1="40" x2="36" y2="50" /></SvcIcon> },
+      { name: "Iluminación", desc: "Evaluación de condiciones de iluminación en puestos de trabajo según Resolución 800/16 SRT.", icon: <SvcIcon><path d="M30 44 h12" /><path d="M31 48 h10" /><path d="M30 44 C28 38 24 34 24 30 a12 12 0 0 1 24 0 c0 4-4 8-6 14Z" /><line x1="36" y1="18" x2="36" y2="14" /><line x1="48" y1="22" x2="51" y2="19" /><line x1="24" y1="22" x2="21" y2="19" /></SvcIcon> },
+      { name: "Ruido laboral", desc: "Monitoreo de exposición al ruido en puestos de trabajo según normativa IRAM y SRT.", icon: <SvcIcon><path d="M22 30 q7-6 14 0 t14 0" /><path d="M22 36 q7-6 14 0 t14 0" /><path d="M22 42 q7-6 14 0 t14 0" /></SvcIcon> },
+      { name: "Ruido molesto\nal vecindario", desc: "Medición y evaluación de emisiones sonoras al exterior según normativa provincial y municipal.", icon: <SvcIcon><path d="M26 30 h5 l9-8 v28 l-9-8 h-5 z" /><path d="M44 29 c4 4 4 10 0 14" /><path d="M47 25 c7 7 7 18 0 22" /></SvcIcon> },
+      { name: "Vibraciones", desc: "Evaluación de vibraciones mano-brazo y cuerpo entero según normativa.", icon: <SvcIcon><path d="M22 30 q7-6 14 0 t14 0" /><path d="M22 36 q7-6 14 0 t14 0" /><path d="M22 42 q7-6 14 0 t14 0" /></SvcIcon> },
+    ],
+  },
+  {
+    label: "Barrios cerrados",
+    services: [
+      { name: "Estudios de impacto\nambiental", desc: "EIA específicos para desarrollos urbanísticos, barrios cerrados y loteos.", icon: <SvcIcon><line x1="44" y1="28" x2="28" y2="44" /><path d="M44 24 L48 28 L38 38 L34 34 Z" /><path d="M26 46 L30 42" /></SvcIcon> },
+      { name: "Gestión de efluentes\ncloacales", desc: "Diseño, monitoreo y gestión de sistemas de tratamiento de efluentes cloacales.", icon: <SvcIcon><path d="M36 22 C36 22 26 34 26 41 a10 10 0 0 0 20 0 C46 34 36 22 36 22Z" /><path d="M30 43 C30 47 33 49 36 49" /></SvcIcon> },
+      { name: "Gestión de\nresiduos", desc: "Planificación y gestión de residuos sólidos urbanos en urbanizaciones privadas.", icon: <SvcIcon><rect x="27" y="30" width="18" height="20" rx="2" /><line x1="24" y1="30" x2="48" y2="30" /><path d="M32 30v-3h8v3" /><line x1="32" y1="35" x2="32" y2="45" /><line x1="36" y1="35" x2="36" y2="45" /><line x1="40" y1="35" x2="40" y2="45" /></SvcIcon> },
+      { name: "Habilitaciones\nmunicipales", desc: "Gestión integral de trámites de habilitación municipal para emprendimientos inmobiliarios.", icon: <SvcIcon><path d="M29 22 h14 v28 l-7-5 -7 5 Z" /></SvcIcon> },
+    ],
+  },
 ];
+
 
 const clients = [
   "RAÚL CÓRDOBA", "Carshop Neumáticos", "TERRITORIO", "JIU JITSU", "ACINDAR Grupo ArcelorMittal",
@@ -385,7 +381,7 @@ function Header() {
 
         {/* Desktop logo LEFT */}
         <a href="#" className="hidden md:flex items-center">
-          <img src={logoImg} alt="Bio Seguridad" className="h-8 w-auto object-contain" />
+          <img src={logoImg} alt="Bio Seguridad" className="h-11 w-auto object-contain" />
         </a>
 
         {/* Desktop links */}
@@ -476,9 +472,9 @@ function Hero() {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Gradient: darkens left side for text legibility, fades to transparent on right */}
+      {/* Desktop gradient: darkens left, fades right */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 hidden sm:block"
         style={{
           background: `linear-gradient(
             to right,
@@ -488,6 +484,11 @@ function Hero() {
             rgba(19,61,44,0.04) 100%
           )`,
         }}
+      />
+      {/* Mobile gradient: uniform dark overlay */}
+      <div
+        className="absolute inset-0 sm:hidden"
+        style={{ background: "rgba(19,61,44,0.72)" }}
       />
       {/* Subtle bottom darkening so stats bar text reads cleanly */}
       <div
@@ -500,9 +501,18 @@ function Hero() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10 w-full pt-28 lg:pt-32 pb-16 lg:pb-24">
           <div className="max-w-full lg:max-w-[52%] lg:min-w-[340px] flex flex-col gap-5 lg:gap-6">
 
-            {/* Eyebrow label */}
+            {/* Mobile-only: color logo centered */}
+            <div className="sm:hidden flex justify-start mb-2">
+              <img
+                src={logoAColor}
+                alt="Bio Seguridad"
+                className="w-3/5 object-contain"
+              />
+            </div>
+
+            {/* Eyebrow label — desktop only */}
             <p
-              className="text-xs font-bold uppercase tracking-[0.18em]"
+              className="hidden sm:block text-xs font-bold uppercase tracking-[0.18em]"
               style={{ color: C.light, fontFamily: "DM Sans, sans-serif", textShadow: lightTextShadow }}
             >
               Ingeniería Ambiental · Higiene · Seguridad
@@ -708,25 +718,30 @@ function ServiceCard({
 }
 
 function Services() {
-  // Ordered list of active indices (mobile: max 3, FIFO eviction)
+  const [activeTab, setActiveTab] = useState(0);
   const [activeQueue, setActiveQueue] = useState<number[]>([]);
+
+  const handleTab = (i: number) => {
+    setActiveTab(i);
+    setActiveQueue([]);
+  };
 
   const toggle = (i: number) => {
     setActiveQueue(prev => {
-      if (prev.includes(i)) {
-        // Deactivate
-        return prev.filter(x => x !== i);
-      }
-      // Activate — evict oldest if already 3
+      if (prev.includes(i)) return prev.filter(x => x !== i);
       const next = prev.length >= 3 ? prev.slice(1) : prev;
       return [...next, i];
     });
   };
 
+  const currentServices = serviceCategories[activeTab].services;
+
   return (
     <section id="servicios" className="py-24" style={{ background: "#F5F6F5" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="mb-14">
+
+        {/* Header */}
+        <div className="mb-10">
           <p className="text-xs font-bold uppercase tracking-[0.18em] mb-3" style={{ color: C.primary, fontFamily: "DM Sans, sans-serif" }}>
             Nuestros servicios
           </p>
@@ -738,18 +753,87 @@ function Services() {
           </p>
         </div>
 
+        {/* ── Mobile nav: arrows + dots (hidden on sm+) ── */}
+        <div className="sm:hidden mb-8">
+          <div className="flex items-center justify-between gap-4 mb-3">
+            <button
+              onClick={() => handleTab((activeTab - 1 + serviceCategories.length) % serviceCategories.length)}
+              className="w-10 h-10 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors"
+              style={{ borderColor: C.primary, color: C.primary }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+            </button>
+
+            <span className="font-black text-lg text-center" style={{ color: C.primary, fontFamily: "DM Sans, sans-serif" }}>
+              {serviceCategories[activeTab].label}
+            </span>
+
+            <button
+              onClick={() => handleTab((activeTab + 1) % serviceCategories.length)}
+              className="w-10 h-10 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors"
+              style={{ borderColor: C.primary, color: C.primary }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+            </button>
+          </div>
+
+          {/* Dot indicators */}
+          <div className="flex items-center justify-center gap-2">
+            {serviceCategories.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => handleTab(i)}
+                className="w-2.5 h-2.5 rounded-full transition-all duration-300"
+                style={{ background: i === activeTab ? C.primary : "#c4d4cb" }}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* ── Desktop nav: segmented control with sliding pill (hidden on mobile) ── */}
+        <div className="hidden sm:block mb-8">
+          <div
+            className="relative flex rounded-full p-1"
+            style={{ background: "#e2e8e4" }}
+          >
+            <div
+              className="absolute top-1 bottom-1 rounded-full transition-all duration-300 ease-in-out"
+              style={{
+                left: `calc(${activeTab} * 25% + 4px)`,
+                width: "calc(25% - 8px)",
+                background: C.primary,
+              }}
+            />
+            {serviceCategories.map((cat, i) => (
+              <button
+                key={cat.label}
+                onClick={() => handleTab(i)}
+                className="relative z-10 flex-1 py-2.5 px-4 text-sm font-bold text-center transition-colors duration-300 rounded-full"
+                style={{
+                  color: activeTab === i ? "white" : "#6b7280",
+                  fontFamily: "DM Sans, sans-serif",
+                }}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Service cards grid — 2 cols mobile, 4 cols desktop */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-          {services.map((s, i) => (
+          {currentServices.map((s, i) => (
             <ServiceCard
               key={s.name}
               name={s.name}
               desc={s.desc}
-              icon={serviceIcons[i]}
+              icon={s.icon}
               active={activeQueue.includes(i)}
               onToggle={() => toggle(i)}
             />
           ))}
         </div>
+
       </div>
     </section>
   );
@@ -1182,26 +1266,43 @@ function Contact() {
         </p>
 
         {/* Contact info — left-aligned on mobile, centered on desktop */}
-        <div className="flex flex-col items-start sm:flex-row sm:items-center sm:justify-center gap-8">
-          {[
-            { icon: <PhoneIcon />, label: "Teléfono", value: "(03400) 15498492", href: "tel:+5403400015498492" },
-            { icon: <MailIcon />, label: "Email", value: "bioseguridad@outlook.com.ar", href: "mailto:bioseguridad@outlook.com.ar" },
-            { icon: <MapPinIcon />, label: "Ubicación", value: "Villa Constitución · Rosario", href: undefined },
-          ].map((c) => (
-            <div key={c.label} className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: C.paleMintStrong, color: C.primary }}>
-                {c.icon}
-              </div>
-              <div className="text-left">
-                <div className="text-xs text-gray-400 uppercase tracking-wide">{c.label}</div>
-                {c.href ? (
-                  <a href={c.href} className="font-semibold transition-colors hover:opacity-70" style={{ color: C.primary }}>{c.value}</a>
-                ) : (
-                  <div className="font-semibold" style={{ color: C.primary }}>{c.value}</div>
-                )}
-              </div>
+        <div className="flex flex-col items-start sm:flex-row sm:items-start sm:justify-center gap-6 sm:gap-10">
+
+          {/* Teléfono */}
+          <div className="flex items-start gap-3">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: C.paleMintStrong, color: C.primary }}>
+              <PhoneIcon />
             </div>
-          ))}
+            <div className="text-left">
+              <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Teléfono</div>
+              <a href="tel:+5403400015698492" className="block font-semibold whitespace-nowrap transition-colors hover:opacity-70" style={{ color: C.primary }}>(03400) 15698492</a>
+              <a href="tel:+543794767209" className="block font-semibold transition-colors hover:opacity-70" style={{ color: C.primary }}>(379) 476-7209</a>
+            </div>
+          </div>
+
+          {/* Email */}
+          <div className="flex items-start gap-3">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: C.paleMintStrong, color: C.primary }}>
+              <MailIcon />
+            </div>
+            <div className="text-left">
+              <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Email</div>
+              <a href="mailto:joana.bioseguridad@gmail.com" className="block font-semibold transition-colors hover:opacity-70" style={{ color: C.primary }}>joana.bioseguridad@gmail.com</a>
+              <a href="mailto:agustina.bioseguridad@gmail.com" className="block font-semibold transition-colors hover:opacity-70" style={{ color: C.primary }}>agustina.bioseguridad@gmail.com</a>
+            </div>
+          </div>
+
+          {/* Ubicación */}
+          <div className="flex items-start gap-3">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: C.paleMintStrong, color: C.primary }}>
+              <MapPinIcon />
+            </div>
+            <div className="text-left">
+              <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Ubicación</div>
+              <div className="font-semibold whitespace-nowrap" style={{ color: C.primary }}>Santa Fe · Buenos Aires</div>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -1250,14 +1351,20 @@ function Footer() {
           <div>
             <h4 className="font-bold text-sm mb-4 uppercase tracking-widest" style={{ color: C.light, fontFamily: "DM Sans, sans-serif" }}>Contacto</h4>
             <div className="flex flex-col gap-3">
-              <a href="tel:+5403400015498492" className="flex items-center gap-2.5 text-white/50 hover:text-white text-sm transition-colors">
-                <PhoneIcon size={16} /> (03400) 15498492
+              <a href="tel:+5403400015698492" className="flex items-center gap-2.5 text-white/50 hover:text-white text-sm transition-colors">
+                <PhoneIcon size={16} /> (03400) 15698492
               </a>
-              <a href="mailto:bioseguridad@outlook.com.ar" className="flex items-center gap-2.5 text-white/50 hover:text-white text-sm transition-colors">
-                <MailIcon /> bioseguridad@outlook.com.ar
+              <a href="tel:+543794767209" className="flex items-center gap-2.5 text-white/50 hover:text-white text-sm transition-colors">
+                <PhoneIcon size={16} /> (379) 476-7209
               </a>
-              <span className="flex items-start gap-2.5 text-white/50 text-sm">
-                <MapPinIcon /> <span>Río Bermejo 5771 — Villa Constitución<br />1° de Mayo 1321 — Rosario</span>
+              <a href="mailto:joana.bioseguridad@gmail.com" className="flex items-center gap-2.5 text-white/50 hover:text-white text-sm transition-colors">
+                <MailIcon /> joana.bioseguridad@gmail.com
+              </a>
+              <a href="mailto:agustina.bioseguridad@gmail.com" className="flex items-center gap-2.5 text-white/50 hover:text-white text-sm transition-colors">
+                <MailIcon /> agustina.bioseguridad@gmail.com
+              </a>
+              <span className="flex items-center gap-2.5 text-white/50 text-sm">
+                <MapPinIcon /> Santa Fe · Buenos Aires
               </span>
             </div>
           </div>
