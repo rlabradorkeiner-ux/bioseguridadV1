@@ -4,7 +4,7 @@ import heroBg from "@/imports/Fotofondo.jpg";
 import ilustracion from "@/imports/94f7c0a6-924c-4dae-964a-7536b614b875-1.png";
 import ilustracion2 from "@/imports/Illustraci_n_2.png";
 import hojaaImg from "@/imports/Hojaaa.png";
-import logoAColor from "@/imports/LogoAColor.png";
+import logoAColor from "@/imports/LogoAColora-1.png";
 import bannerLogos from "@/imports/Banner-1.png";
 
 // ─── Color tokens ─────────────────────────────────────────────────────────────
@@ -280,7 +280,7 @@ const serviceCategories: ServiceCategory[] = [
     label: "Higiene y seguridad",
     services: [
       { name: "Gestión de seguridad\ne higiene laboral", desc: "Asesoramiento SRT, ART y evaluaciones de riesgo ocupacional.", icon: <SvcIcon><circle cx="34" cy="34" r="10" /><line x1="41" y1="41" x2="48" y2="48" /><line x1="30" y1="32" x2="38" y2="32" /><line x1="30" y1="36" x2="38" y2="36" /></SvcIcon> },
-      { name: "Informes anti\nsiniéstrales", desc: "Documentación técnica y estadística de siniestros para organismos de control.", icon: <SvcIcon><rect x="26" y="22" width="20" height="26" rx="2" /><line x1="30" y1="30" x2="42" y2="30" /><line x1="30" y1="35" x2="42" y2="35" /><line x1="30" y1="40" x2="36" y2="40" /><line x1="30" y1="26" x2="42" y2="26" /></SvcIcon> },
+      { name: "Informes anti\nsiniéstrales", desc: "Relevamiento del comercio, establecimiento o industria, asesoramiento y confección de legajo técnico de higiene y seguridad para habilitación municipal.", icon: <SvcIcon><rect x="26" y="22" width="20" height="26" rx="2" /><line x1="30" y1="30" x2="42" y2="30" /><line x1="30" y1="35" x2="42" y2="35" /><line x1="30" y1="40" x2="36" y2="40" /><line x1="30" y1="26" x2="42" y2="26" /></SvcIcon> },
       { name: "Procedimientos\nde emergencia", desc: "Protocolos, simulacros y planes de contingencia ambiental y operativa.", icon: <SvcIcon><circle cx="36" cy="36" r="10" /><line x1="36" y1="30" x2="36" y2="38" /><circle cx="36" cy="42" r="1" fill={C.primary} stroke="none" /></SvcIcon> },
       { name: "Programas de\nseguridad", desc: "Desarrollo e implementación de programas de prevención de riesgos laborales.", icon: <SealBadgeSvcIcon /> },
     ],
@@ -301,7 +301,7 @@ const serviceCategories: ServiceCategory[] = [
       { name: "Estudios de impacto\nambiental", desc: "EIA específicos para desarrollos urbanísticos, barrios cerrados y loteos.", icon: <SvcIcon><line x1="44" y1="28" x2="28" y2="44" /><path d="M44 24 L48 28 L38 38 L34 34 Z" /><path d="M26 46 L30 42" /></SvcIcon> },
       { name: "Gestión de efluentes\ncloacales", desc: "Diseño, monitoreo y gestión de sistemas de tratamiento de efluentes cloacales.", icon: <SvcIcon><path d="M36 22 C36 22 26 34 26 41 a10 10 0 0 0 20 0 C46 34 36 22 36 22Z" /><path d="M30 43 C30 47 33 49 36 49" /></SvcIcon> },
       { name: "Gestión de\nresiduos", desc: "Planificación y gestión de residuos sólidos urbanos en urbanizaciones privadas.", icon: <SvcIcon><rect x="27" y="30" width="18" height="20" rx="2" /><line x1="24" y1="30" x2="48" y2="30" /><path d="M32 30v-3h8v3" /><line x1="32" y1="35" x2="32" y2="45" /><line x1="36" y1="35" x2="36" y2="45" /><line x1="40" y1="35" x2="40" y2="45" /></SvcIcon> },
-      { name: "Habilitaciones\nmunicipales", desc: "Gestión integral de trámites de habilitación municipal para emprendimientos inmobiliarios.", icon: <SvcIcon><path d="M29 22 h14 v28 l-7-5 -7 5 Z" /></SvcIcon> },
+      { name: "Habilitaciones\nmunicipales", desc: "Gestión integral de trámites de habilitación municipal para comercios, industrias y emprendimientos inmobiliarios.", icon: <SvcIcon><path d="M29 22 h14 v28 l-7-5 -7 5 Z" /></SvcIcon> },
     ],
   },
 ];
@@ -667,7 +667,7 @@ function ServiceCard({
 
   return (
     <div
-      className="relative flex flex-col items-center justify-center text-center p-6 rounded-2xl select-none"
+      className="relative flex flex-col items-center justify-center p-6 rounded-2xl select-none"
       style={{
         minHeight: "200px",
         cursor: "pointer",
@@ -709,7 +709,7 @@ function ServiceCard({
           pointerEvents: "none",
         }}
       >
-        <p className="font-bold text-sm leading-relaxed" style={{ color: C.primary, fontFamily: "DM Sans, sans-serif" }}>
+        <p className="font-bold text-sm leading-relaxed text-left" style={{ color: C.primary, fontFamily: "DM Sans, sans-serif" }}>
           {desc}
         </p>
       </div>
