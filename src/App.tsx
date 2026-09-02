@@ -1275,7 +1275,7 @@ function Contact() {
             </div>
             <div className="text-left">
               <div className="text-xs text-gray-400 uppercase tracking-wide mb-1">Teléfono</div>
-              <a href="tel:+5403400015698492" className="block font-semibold whitespace-nowrap transition-colors hover:opacity-70" style={{ color: C.primary }}>(03400) 15698492</a>
+              <a href="tel:+5403400015498492" className="block font-semibold whitespace-nowrap transition-colors hover:opacity-70" style={{ color: C.primary }}>(03400) 15498492</a>
               <a href="tel:+543794767209" className="block font-semibold transition-colors hover:opacity-70" style={{ color: C.primary }}>(379) 476-7209</a>
             </div>
           </div>
@@ -1351,8 +1351,8 @@ function Footer() {
           <div>
             <h4 className="font-bold text-sm mb-4 uppercase tracking-widest" style={{ color: C.light, fontFamily: "DM Sans, sans-serif" }}>Contacto</h4>
             <div className="flex flex-col gap-3">
-              <a href="tel:+5403400015698492" className="flex items-center gap-2.5 text-white/50 hover:text-white text-sm transition-colors">
-                <PhoneIcon size={16} /> (03400) 15698492
+              <a href="tel:+5403400015498492" className="flex items-center gap-2.5 text-white/50 hover:text-white text-sm transition-colors">
+                <PhoneIcon size={16} /> (03400) 15498492
               </a>
               <a href="tel:+543794767209" className="flex items-center gap-2.5 text-white/50 hover:text-white text-sm transition-colors">
                 <PhoneIcon size={16} /> (379) 476-7209
